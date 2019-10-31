@@ -18,6 +18,9 @@ enable :sessions
       erb :play
     end
 
+    get '/attack' do
+      "Player 1 has Attacked Player 2!"
+    end
    run! if app_file == $0
 
 
