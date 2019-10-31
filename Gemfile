@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-group :development, :test do
+group :test do
   gem 'rspec'
   gem 'sinatra'
   gem 'rubocop'
