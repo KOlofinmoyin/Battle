@@ -19,8 +19,14 @@ enable :sessions
     end
 
     get '/attack' do
-      "Player 1 has Attacked Player 2!"
+      erb :attack
     end
+
+
+
+
+
+
    run! if app_file == $0
 
 
