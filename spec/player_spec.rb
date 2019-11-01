@@ -8,7 +8,4 @@ require 'player'
       expect(joey.name).to eq "Joey"
     end
 
-    it "I reduces Player 2's HP by 10 when attacked" do
-      expect{ joey.attack(mitchel) }.to change{ mitchel.hp }.by(-10)
-    end
   end
