@@ -15,7 +15,12 @@ feature 'Testing infrastructure' do
       sign_in_and_play
       click_button "Player 1 Attack!"
       expect(page).to have_content 'Player 1 has Attacked Player 2!'
+    end
 
+    scenario "reduces Player 2's HP by 10 when attacked" do
+      sign_in_and_play
+      click_button "Player 1 Attack"
+      expect(page).to have_content 'Bob: 90 HP'
     end
 
 end
